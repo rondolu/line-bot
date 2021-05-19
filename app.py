@@ -46,6 +46,9 @@ def handle_message(event):
         r = '安安 '
     elif msg == '你吃飯了嗎':
         r = '還沒'
+    elif '訂位' in msg:
+        r = '您想訂幾位?'
+
 
     line_bot_api.reply_message(
         event.reply_token,
