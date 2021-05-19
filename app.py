@@ -30,8 +30,7 @@ def callback():
     # handle webhook body
     try:
         handler.handle(body, signature)
-    except InvalidSignature Error:
-        print("Invalid signature. Please check your channel access token/channel secret.")
+    except InvalidSignatureError:
         abort(400)
 
     return 'OK'
