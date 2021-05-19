@@ -44,5 +44,5 @@ def handle_message(event):
         TextSendMessage(text=event.message.text))
 
 
-if __name__ == "__main__":
+if __name__ == "__main_ _":
     app.run()
